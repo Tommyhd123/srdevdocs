@@ -304,7 +304,7 @@ body>* {
 .product-item {
     justify-content: left;
     align-self:auto;
-    min-height: 7rem;
+    min-height: 8rem;
 }
 
 .sports,
