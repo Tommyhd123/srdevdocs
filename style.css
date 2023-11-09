@@ -135,8 +135,8 @@ body>* {
     align-items: center;
     max-height: 40vh;
     transition-duration: 1000ms;
-    padding-top: 8rem;
-    padding-bottom: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
 
     @media (min-width:1200px) {
         background-position: right 5% bottom 0px, left -2rem bottom;
