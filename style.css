@@ -4,6 +4,8 @@ body {
     font-family: 'source sans 3', sans-serif;
     padding: 0;
     margin: 0;
+    margin-block-start: 0rem;
+    margin-block-end: 0px;
     width: 100vw;
     transition-duration: 2000ms;
 }
