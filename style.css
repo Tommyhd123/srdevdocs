@@ -130,7 +130,7 @@ body>* {
     color: white;
     background-image: url(https://files.readme.io/92707b6-Basketball_Landing_Page_Desktop.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
     background-repeat: no-repeat;
-    background-position: right -10rem bottom 0px, left -2rem bottom;
+    background-position: right -5% bottom 0px, left -2rem bottom;
     background-size: 65vh, 18vh;
     align-items: center;
     max-height: 40vh;
@@ -143,7 +143,7 @@ body>* {
     }
 
     @media (max-width:950px) {
-        background-position: right -10rem bottom 0px, left -2rem bottom;
+        background-position: right -5% bottom 0px, left -2rem bottom;
     }
 
     @media (max-width:750px) {
