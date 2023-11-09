@@ -151,7 +151,7 @@ body>* {
 
     @media (max-width:750px) {
         background-size: 65vh, 18vh;
-        background-position: right -16rem bottom 0px, left -2rem bottom;
+        background-position: right -12rem bottom 0px, left -2rem bottom;
         padding-bottom: 36vh;
         transition-duration: 2000ms;
     }
