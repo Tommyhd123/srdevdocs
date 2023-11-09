@@ -432,11 +432,6 @@ a {
     margin-right: auto;
 }
 
-.helplinks-grid>* {
-
-}
-
-
 .quicklinks-grid,
 .helplinks-grid {
     display: grid;
