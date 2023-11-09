@@ -11,6 +11,13 @@ body {
     transition-duration: 2000ms;
 }
 
+:root {
+    --primary: #1A237E;
+    --linkblue: #2962FF;
+    --linkred: #D32F2F;
+    --outline: #E8EAF6;
+}
+
 .d2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
@@ -71,7 +78,7 @@ h5 {
 
 body>* {
     background-color: white;
-    color: #1A237E;
+    color: var(--primary);
     padding: 5rem 10%;
     justify-content: center;
 }
@@ -184,11 +191,11 @@ body>* {
 }
 
 .cta-1 {
-    background-color: #D32F2F;
+    background-color: var(--linkred);
 }
 
 .cta-2 {
-    background-color: #2962FF;
+    background-color: var(--linkblue);
 }
 
 .cta-3 {
@@ -201,7 +208,7 @@ body>* {
     gap: .5rem;
     padding: .75rem;
     text-decoration: none;
-    color: #1A237E;
+    color: var(--primary);
     width: 140px;
     outline-color: #E8EAF6;
     outline-width: 1px;
@@ -236,7 +243,7 @@ body>* {
 
 .products {
     background-color: white;
-    color: #1A237E;
+    color: var(--primary);
     background-repeat: no-repeat;
     background-position: right -5rem top 2.5rem;
     background-size: 30vh;
