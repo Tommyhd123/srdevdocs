@@ -132,7 +132,8 @@ body>* {
     align-items: center;
     max-height: 30vh;
     transition-duration: 2000ms;
-    padding-bottom: 4rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
 
     @media (min-width:1200px) {
         background-position: right 5% bottom 0px, left -2rem bottom;
@@ -156,7 +157,7 @@ body>* {
         background-size: 45vh, 18vh;
         background-position: right bottom 0px, left -2rem bottom;
         padding-bottom: 28vh;
-        padding-top: 20vh;
+       
     }
 }
 
