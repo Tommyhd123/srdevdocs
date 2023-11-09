@@ -139,11 +139,11 @@ body>* {
     padding-bottom: 7rem;
 
     @media (min-width:1200px) {
-        background-position: right 5% bottom 0px, left -2rem bottom;
+        background-position: right -5% bottom 0px, left -2rem bottom;
     }
 
     @media (max-width:950px) {
-        background-position: right 5% bottom 0px, left -2rem bottom;
+        background-position: right -5% bottom 0px, left -2rem bottom;
 
     }
 
