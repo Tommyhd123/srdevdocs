@@ -6,7 +6,6 @@ body {
     margin: 0;
     width: 100vw;
     transition-duration: 2000ms;
-    overflow: hidden;
 }
 
 :root {
@@ -96,6 +95,7 @@ body>* {
     position: fixed;
     z-index: 999;
     width: 100%;
+    overflow: hidden;
 }
 
 .links {
