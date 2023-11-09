@@ -16,6 +16,7 @@ body {
     --linkblue: #2962FF;
     --linkred: #D32F2F;
     --outline: #E8EAF6;
+    --gridgap: .75rem;
 }
 
 .d2 {
@@ -164,7 +165,7 @@ body>* {
 .hero-links {
     margin-top: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: var(--gridgap);
     flex-wrap: wrap;
 }
 
@@ -254,7 +255,7 @@ body>* {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: var(--gridgap);
 
     @media (max-width:850px) {
         grid-template-columns: repeat(2, 1fr)
@@ -333,7 +334,7 @@ body>* {
 .league-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    gap: var(--gridgap);
     padding-bottom: 2rem;
 
     @media (max-width:750px) {
@@ -348,7 +349,7 @@ body>* {
 .sport-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    gap: var(--gridgap);
 
     @media (max-width:750px) {
         grid-template-columns: repeat(2, 1fr)
@@ -433,7 +434,7 @@ a {
 .helplinks-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: var(--gridgap);
     @media (max-width:600px) {
         grid-template-columns: repeat(1, 1fr)
     }
