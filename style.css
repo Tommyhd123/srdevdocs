@@ -95,6 +95,9 @@ body>* {
     padding: 0rem 4%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 .links {
