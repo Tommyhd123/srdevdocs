@@ -141,7 +141,9 @@ body>* {
     aspect-ratio: 1;
 }
 
-
+.close-menu {
+    justify-content: flex-end;
+}
 
 .links {
     display: flex;
@@ -216,7 +218,6 @@ body>* {
 @media (max-width:750px) {
     .open-menu {
         display: block;
-        fill: white border-color: white;
     }
 
     .nav-link {
