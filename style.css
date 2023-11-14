@@ -105,7 +105,7 @@ body>* {
 }
 
 .sidebar {
-    height: 100vh;
+    height: 100%;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     align-items: flex-start;
     justify-content: flex-start;
