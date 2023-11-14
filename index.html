@@ -18,32 +18,39 @@
     <div class="nav">
         <img src="https://files.readme.io/32d691b-Sportradar_White.svg" class="logo">
         <div class="links">
-            <a class="nav-link" href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
-            <a class="nav-link" href="https://console.sportradar.com/signup">Sign Up</a>
-            <a class="nav-link" href="https://console.sportradar.com">Log In</a>
-            <img onclick=showSidebar() src="https://files.readme.io/ef0021a-menu_hamburger_three_lines.svg" class="open-menu">
+            <div class="nav-links">
+                <a href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
+                <a href="https://console.sportradar.com/signup">Sign Up</a>
+                <a href="https://console.sportradar.com">Log In</a>
+            </div>
+            <img onclick=showSidebar() src="https://files.readme.io/ef0021a-menu_hamburger_three_lines.svg"
+                class="open-menu">
         </div>
     </div>
 
     <div class="sidebar">
-            <img onclick=hideSidebar() src="https://files.readme.io/c86267b-close_delete_x_exit_collapse.svg" class="close-menu">
-            <a class="link" href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
-            <a class="link" href="https://console.sportradar.com/signup">Sign Up</a>
-            <a class="link" href="https://console.sportradar.com">Log In</a>
+        <img onclick=hideSidebar() src="https://files.readme.io/c86267b-close_delete_x_exit_collapse.svg"
+            class="close-menu">
+        <a class="link" href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
+        <a class="link" href="https://console.sportradar.com/signup">Sign Up</a>
+        <a class="link" href="https://console.sportradar.com">Log In</a>
     </div>
 
     <script>
-function showSidebar() {
-    const sidebar = document.querySelector('.sidebar')
-sidebar.style.display = 'flex'
-}
-function hideSidebar() {
-    const sidebar = document.querySelector('.sidebar')
-sidebar.style.display = 'none'
-}
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+            sidebar.style.right = '0px'
+
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+
+        }
     </script>
 
-    
+
 
     <div class="hero">
         <div class="hero-info">
