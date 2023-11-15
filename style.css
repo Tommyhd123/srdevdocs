@@ -87,7 +87,11 @@ body>* {
 
 .logo {
     height: 20px;
+<<<<<<< Updated upstream
     margin-left: 2rem;
+=======
+    margin-left: 1.5rem;
+>>>>>>> Stashed changes
 }
 
 .nav {
@@ -262,7 +266,7 @@ body>* {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gridgap);
 
-    @media (max-width:850px) {
+    @media (max-width:864px) {
         grid-template-columns: repeat(2, 1fr)
     }
 
@@ -405,6 +409,7 @@ a {
     justify-content: left;
     gap: .5rem;
     align-items: center;
+    text-align: left;
 }
 
 .product-description {
