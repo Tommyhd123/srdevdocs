@@ -482,6 +482,7 @@ a {
     justify-content: left;
     gap: .5rem;
     align-items: center;
+    text-align: left;
 }
 
 .product-description {
