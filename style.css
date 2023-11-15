@@ -88,7 +88,10 @@ body>* {
 
 .logo {
     height: 20px;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
+    transition-duration: 1000ms;
+
+   
 }
 
 .nav {
@@ -139,10 +142,10 @@ body>* {
 
 .open-menu,
 .close-menu {
-    width: 24px;
-    height:24px;
+    width: 1.5rem;
+    height:1.5rem;
     padding: 1rem 1.25rem;
-    margin-right: 1rem;
+    margin-right: 0rem;
 }
 
 .close-menu {
@@ -152,7 +155,7 @@ body>* {
 .nav-links {
     display: flex;
     text-decoration: none;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 
@@ -181,25 +184,30 @@ body>* {
     background-position: right -5rem bottom 0px, left -2rem bottom;
     background-size: 36rem, 12rem;
     align-items: center;
-    transition-duration: 1000ms;
+    transition-duration: 1500ms;
 
     @media (min-width:1200px) {
-        background-position: right -3% bottom 0px, left -2rem bottom;
+        background-position: right 5% bottom 0px, left -2rem bottom;
 
     }
 
-   @media (max-width:950px) {
-        background-position: right -15rem bottom 0px, left -2rem bottom;
+   @media (max-width:1000px) {
+        background-position: right -12rem bottom 0px, left -2rem bottom;
     }
 
-    @media (max-width:750px) {
+    @media (max-width:864px) {
         background-size: 28rem, 12rem;
-        background-position: right -10rem bottom 0px, left -2rem bottom;
+        background-position: right -5rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
 
-    @media (max-width:500px) {
-        background-position: right -10rem bottom 0px, left -2rem bottom;
+    @media (max-width:680px) {
+        background-position: right -5rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+    }
+
+    @media (max-width:400px) {
+        background-position: right -12rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
 }
