@@ -178,32 +178,29 @@ body>* {
     color: white;
     background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
     background-repeat: no-repeat;
-    background-position: right -10rem bottom 0px, left -2rem bottom;
-    background-size: 65vh, 18vh;
+    background-position: right -5rem bottom 0px, left -2rem bottom;
+    background-size: 36rem, 12rem;
     align-items: center;
     transition-duration: 1000ms;
 
     @media (min-width:1200px) {
-        background-position: right 5% bottom 0px, left -2rem bottom;
+        background-position: right -3% bottom 0px, left -2rem bottom;
 
     }
 
-
-    @media (max-width:950px) {
-        background-position: right 5% bottom 0px, left -2rem bottom;
-
+   @media (max-width:950px) {
+        background-position: right -15rem bottom 0px, left -2rem bottom;
     }
 
     @media (max-width:750px) {
-        background-size: 65vh, 18vh;
-        background-position: right 5% bottom 0px, left -2rem bottom;
-        padding-bottom: 24rem;
+        background-size: 28rem, 12rem;
+        background-position: right -10rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
     }
 
     @media (max-width:500px) {
-        background-size: 45vh, 18vh;
-        background-position: right 5% bottom 0px, left -2rem bottom;
-        padding-bottom: 24rem;
+        background-position: right -10rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
     }
 }
 
