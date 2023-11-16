@@ -352,10 +352,16 @@ body>* {
         padding-bottom: 16rem;
     }
 
-    @media screen and (max-width:700px) and (orientation:portrait) {
-        background-size: 28rem, 12rem;
-        background-position: right -8rem bottom 0px, left -2rem bottom;
-        padding-bottom: 16rem;
+    @media screen and (max-width:600px) {
+        background-size: 24rem, 12rem;
+        background-position: right -6rem bottom 0px, left -2rem bottom;
+        padding-bottom: 14rem;
+    }
+
+    @media screen and (orientation:portrait) {
+        background-size: 24rem, 12rem;
+        background-position: right -6rem bottom 0px, left -2rem bottom;
+        padding-bottom: 14rem;
     }
 
     /* background-position: right -18rem bottom 0px, left -2rem bottom;
@@ -368,9 +374,15 @@ body>* {
         padding-bottom: 5rem;
     }*/
 
+    @media screen and (min-width:600px) {
+        background-position: right -10rem bottom 0px, left -2rem bottom;
+        background-size: 24rem, 12rem;
+        padding-bottom: 5rem;
+    }
+
     @media screen and (min-width:700px) {
-        background-position: right -12rem bottom 0px, left -2rem bottom;
-        background-size: 28rem, 12rem;
+        background-position: right -8rem bottom 0px, left -2rem bottom;
+        background-size: 24rem, 12rem;
         padding-bottom: 5rem;
     }
 
