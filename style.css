@@ -201,12 +201,12 @@ body>* {
         padding-bottom: 16rem;
     }
 
-    @media (max-width:680px) {
+    @media (max-width:680px), (orientation:portrait) {
         background-position: right -5rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
 
-    @media (max-width:400px) {
+    @media (max-width:400px), (orientation:portrait) {
         background-position: right -12rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
