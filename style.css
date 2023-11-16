@@ -358,13 +358,25 @@ body>* {
         padding-bottom: 16rem;
     }
 
-    @media (min-width:750px) {
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+    only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 700px) {
         background-position: right -18rem bottom 0px, left -2rem bottom;
         background-size: 36rem, 12rem;
         padding-bottom: 5rem;
     }
 
-    @media (min-width:844px) {
+   /* @media (min-width:750px) {
+        background-position: right -18rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
+    }
+
+    @media (min-width:840px) {
         background-position: right -14rem bottom 0px, left -2rem bottom;
     }
 
@@ -386,7 +398,7 @@ body>* {
 
     @media (min-width:1900px) {
         background-position: right 22rem bottom 0px, left -2rem bottom;
-    }
+    }*/
 
 }
 
