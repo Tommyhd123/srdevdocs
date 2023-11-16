@@ -1,5 +1,6 @@
 html,
 body {
+    overflow-x: hidden;
     min-height: 100vh;
     color-scheme: dark;
     font-family: 'source sans 3', sans-serif;
@@ -175,7 +176,52 @@ body>* {
     margin-inline: auto;
 }
 
-.hero {
+/*.hero {
+    padding-top: 8rem;
+    background-color: #162173;
+    color: white;
+    background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
+    background-repeat: no-repeat;
+    background-position: right -5rem bottom 0px, left -2rem bottom;
+    background-size: 36rem, 12rem;
+    align-items: center;
+    transition-duration: 1500ms;
+
+
+    @media screen {
+    background-size: 36rem, 12rem;
+    }
+
+    @media (min-width:1600px)  {
+        background-position: right 15% bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1200px)  {
+        background-position: right 5% bottom 0px, left -2rem bottom;
+    }
+
+   @media (max-width:1000px) {
+        background-position: right -12rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (max-width:864px) and (orientation: portrait) {
+        background-size: 28rem, 12rem;
+        background-position: right -5rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+    }
+
+    @media (max-width:680px) and (orientation: portrait) {
+        background-position: right -5rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+    }
+
+    @media (max-width:400px) and (orientation: portrait) {
+        background-position: right -12rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+    }
+}
+
+*.hero {
     padding-top: 8rem;
     background-color: #162173;
     color: white;
@@ -195,21 +241,145 @@ body>* {
         background-position: right -12rem bottom 0px, left -2rem bottom;
     }
 
-    @media (max-width:864px), (orientation:portrait) {
+    @media (max-width:864px) and (orientation: portrait) {
         background-size: 28rem, 12rem;
         background-position: right -5rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
 
-    @media (max-width:680px), (orientation:portrait) {
+    @media (max-width:680px) and (orientation: portrait) {
         background-position: right -5rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
 
-    @media (max-width:400px), (orientation:portrait) {
+    @media (max-width:400px) and (orientation: portrait) {
         background-position: right -12rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
+}
+
+.hero {
+    padding-top: 8rem;
+    background-color: #162173;
+    color: white;
+    background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
+    background-repeat: no-repeat;
+    background-size: 28rem, 12rem;
+        background-position: right -5rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+    align-items: center;
+    transition-duration: 1500ms;
+
+    @media (min-width:0px) {
+        background-position: right -5rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+
+    }
+       
+   @media (min-width:750px) {
+        background-position: right -17rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
+    }
+
+    @media (min-width:844px) {
+        background-position: right -14rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:980px) {
+        background-position: right -8rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1160px) {
+        background-position: right -2rems bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1400px) {
+        background-position: right 4rems bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1600px) {
+        background-position: right 10rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1900px) {
+        background-position: right 22rem bottom 0px, left -2rem bottom;
+    }
+    
+}
+
+.hero {
+    padding-top: 8rem;
+    background-color: #162173;
+    color: white;
+    background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
+    background-repeat: no-repeat;
+    background-size: 28rem, 12rem;
+        background-position: right -5rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+    align-items: center;
+    transition-duration: 1500ms;
+
+    @media (min-width:0px) {
+        background-position: right -5rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+
+    }
+       
+   @media (min-width:750px) {
+        background-position: left 100% bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
+    }
+}
+*/
+
+.hero {
+    padding-top: 8rem;
+    background-color: #162173;
+    color: white;
+    background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
+    background-repeat: no-repeat;
+    background-size: 28rem, 12rem;
+        background-position: right -5rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+    align-items: center;
+    transition-duration: 1500ms;
+
+    @media (width:0px) {
+        padding-bottom: 16rem;
+    }
+       
+   @media (min-width:750px) {
+        background-position: right -18rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
+    }
+
+    @media (min-width:844px) {
+        background-position: right -14rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:980px) {
+        background-position: right -8rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1200px) {
+        background-position: right -2rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1400px) {
+        background-position: right 4rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1600px) {
+        background-position: right 10rem bottom 0px, left -2rem bottom;
+    }
+
+    @media (min-width:1900px) {
+        background-position: right 22rem bottom 0px, left -2rem bottom;
+    }
+    
 }
 
 @media (min-width:750px) {
