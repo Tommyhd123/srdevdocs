@@ -342,8 +342,8 @@ body>* {
     color: white;
     background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
     background-repeat: no-repeat;
-    background-position: right -12rem bottom 0px, left -2rem bottom;
-    background-size: 24rem, 12rem;
+    background-position: right 0rem bottom 0px, left -2rem bottom;
+    background-size: 32rem, 12rem;
     padding-bottom: 5rem;
     align-items: center;
     transition-duration: 1500ms;
@@ -375,8 +375,8 @@ body>* {
     }*/
 
     @media screen and (min-width:600px) {
-        background-position: right -10rem bottom 0px, left -2rem bottom;
-        background-size: 24rem, 12rem;
+        background-position: right -8rem bottom 0px, left -2rem bottom;
+        background-size: 22rem, 12rem;
         padding-bottom: 5rem;
     }
 
@@ -395,26 +395,38 @@ body>* {
 
     @media screen and (min-width:840px) {
         background-position: right -14rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
     }
 
     @media screen and (min-width:980px) {
         background-position: right -8rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
     }
 
     @media screen and (min-width:1200px) {
         background-position: right -2rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
     }
 
     @media screen and (min-width:1400px) {
         background-position: right 4rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
     }
 
     @media screen and (min-width:1600px) {
         background-position: right 10rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
     }
 
     @media screen and (min-width:1900px) {
         background-position: right 22rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
     }
 
 }
