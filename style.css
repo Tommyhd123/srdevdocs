@@ -352,53 +352,47 @@ body>* {
         padding-bottom: 16rem;
     }
 
-    @media (max-width:400px) {
+    @media screen and (max-width:400px) {
         background-size: 28rem, 12rem;
         background-position: right -8rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
 
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
-    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
-    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
-    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
-    only screen and (                min-resolution: 192dpi) and (min-width: 700px),
-    only screen and (                min-resolution: 2dppx)  and (min-width: 700px) {
+    @media screen and (orientation:landscape) {
+        background-position: right -20rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
+    }
+
+   @media screen and (min-width:750px) {
         background-position: right -18rem bottom 0px, left -2rem bottom;
         background-size: 36rem, 12rem;
         padding-bottom: 5rem;
     }
 
-   /* @media (min-width:750px) {
-        background-position: right -18rem bottom 0px, left -2rem bottom;
-        background-size: 36rem, 12rem;
-        padding-bottom: 5rem;
-    }
-
-    @media (min-width:840px) {
+    @media screen and (min-width:840px) {
         background-position: right -14rem bottom 0px, left -2rem bottom;
     }
 
-    @media (min-width:980px) {
+    @media screen and (min-width:980px) {
         background-position: right -8rem bottom 0px, left -2rem bottom;
     }
 
-    @media (min-width:1200px) {
+    @media screen and (min-width:1200px) {
         background-position: right -2rem bottom 0px, left -2rem bottom;
     }
 
-    @media (min-width:1400px) {
+    @media screen and (min-width:1400px) {
         background-position: right 4rem bottom 0px, left -2rem bottom;
     }
 
-    @media (min-width:1600px) {
+    @media screen and (min-width:1600px) {
         background-position: right 10rem bottom 0px, left -2rem bottom;
     }
 
-    @media (min-width:1900px) {
+    @media screen and (min-width:1900px) {
         background-position: right 22rem bottom 0px, left -2rem bottom;
-    }*/
+    }
 
 }
 
