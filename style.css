@@ -352,19 +352,19 @@ body>* {
         padding-bottom: 16rem;
     }
 
-    @media screen and (max-width:400px) {
+    @media screen and (max-width:400px) and (orientation:portrait) {
         background-size: 28rem, 12rem;
         background-position: right -8rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
 
-    @media screen and (orientation:landscape) {
+   /* @media screen and (orientation:landscape) {
         background-position: right -20rem bottom 0px, left -2rem bottom;
         background-size: 36rem, 12rem;
         padding-bottom: 5rem;
-    }
+    }*/
 
-   @media screen and (min-width:750px) {
+   @media screen and (min-width:750px) and (orientation:landscape) {
         background-position: right -18rem bottom 0px, left -2rem bottom;
         background-size: 36rem, 12rem;
         padding-bottom: 5rem;
