@@ -195,7 +195,7 @@ body>* {
         background-position: right -12rem bottom 0px, left -2rem bottom;
     }
 
-    @media (max-width:864px) {
+    @media (max-width:864px), (orientation:portrait) {
         background-size: 28rem, 12rem;
         background-position: right -5rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
