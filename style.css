@@ -364,6 +364,13 @@ body>* {
         padding-bottom: 5rem;
     }*/
 
+    @media screen and (min-width:700px) {
+        background-position: right -18rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem;
+    }
+
+
    @media screen and (min-width:750px) and (orientation:landscape) {
         background-position: right -18rem bottom 0px, left -2rem bottom;
         background-size: 36rem, 12rem;
