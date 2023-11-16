@@ -186,12 +186,12 @@ body>* {
     align-items: center;
     transition-duration: 1500ms;
 
-    @media (min-width:1200px), (orientation:portrait) {
+    @media (min-width:1200px)  {
         background-position: right 5% bottom 0px, left -2rem bottom;
 
     }
 
-   @media (max-width:1000px), (orientation:portrait) {
+   @media (max-width:1000px) {
         background-position: right -12rem bottom 0px, left -2rem bottom;
     }
 
