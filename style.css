@@ -92,7 +92,7 @@ body>* {
     margin-left: 1.5rem;
     transition-duration: 1000ms;
 
-   
+
 }
 
 .nav {
@@ -144,7 +144,7 @@ body>* {
 .open-menu,
 .close-menu {
     width: 1.75rem;
-    height:1.75rem;
+    height: 1.75rem;
     padding: .875rem 1.25rem;
     margin-right: 0rem;
 }
@@ -166,7 +166,9 @@ body>* {
     padding: 1rem;
 }
 
-.nav-links>*:hover, .open-menu:hover, .sidebar>*:hover {
+.nav-links>*:hover,
+.open-menu:hover,
+.sidebar>*:hover {
     background-color: #4552b5;
 
 }
@@ -341,16 +343,22 @@ body>* {
     background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
     background-repeat: no-repeat;
     background-size: 28rem, 12rem;
-        background-position: right -5rem bottom 0px, left -2rem bottom;
-        padding-bottom: 16rem;
+    background-position: right -5rem bottom 0px, left -2rem bottom;
+    padding-bottom: 16rem;
     align-items: center;
     transition-duration: 1500ms;
 
     @media (width:0px) {
         padding-bottom: 16rem;
     }
-       
-   @media (min-width:750px) {
+
+    @media (max-width:400px) {
+        background-size: 28rem, 12rem;
+        background-position: right -8rem bottom 0px, left -2rem bottom;
+        padding-bottom: 16rem;
+    }
+
+    @media (min-width:750px) {
         background-position: right -18rem bottom 0px, left -2rem bottom;
         background-size: 36rem, 12rem;
         padding-bottom: 5rem;
@@ -379,7 +387,7 @@ body>* {
     @media (min-width:1900px) {
         background-position: right 22rem bottom 0px, left -2rem bottom;
     }
-    
+
 }
 
 @media (min-width:750px) {
@@ -427,14 +435,14 @@ body>* {
     min-width: max-content;
     border-radius: 6px;
     font-weight: 600;
-} 
+}
 
 .cta-1:hover {
     background-color: #b40a0a;
 }
 
 .cta-2:hover {
-    background-color:#1045d6 ;
+    background-color: #1045d6;
 }
 
 .hero-info {
