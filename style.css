@@ -342,7 +342,7 @@ body>* {
     color: white;
     background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
     background-repeat: no-repeat;
-    background-position: right 0rem bottom 0px, left -2rem bottom;
+    background-position: right -14rem bottom 0px, left -2rem bottom;
     background-size: 32rem, 12rem;
     padding-bottom: 5rem;
     align-items: center;
