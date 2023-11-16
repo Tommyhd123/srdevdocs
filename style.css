@@ -142,9 +142,9 @@ body>* {
 
 .open-menu,
 .close-menu {
-    width: 1.5rem;
-    height:1.5rem;
-    padding: 1rem 1.25rem;
+    width: 1.75rem;
+    height:1.75rem;
+    padding: .875rem 1.25rem;
     margin-right: 0rem;
 }
 
@@ -155,7 +155,7 @@ body>* {
 .nav-links {
     display: flex;
     text-decoration: none;
-    margin-right: 1.5rem;
+    margin-right: .75rem;
 }
 
 
@@ -257,6 +257,14 @@ body>* {
     min-width: max-content;
     border-radius: 6px;
     font-weight: 600;
+} 
+
+.cta-1:hover {
+    background-color: #b40a0a;
+}
+
+.cta-2:hover {
+    background-color:#1045d6 ;
 }
 
 .hero-info {
