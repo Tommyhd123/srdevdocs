@@ -342,9 +342,9 @@ body>* {
     color: white;
     background-image: url(https://files.readme.io/f7248a7-Basketball_Landing_Page.svg), url(https://files.readme.io/8837edc-sidebar-bg-bottom-left.svg);
     background-repeat: no-repeat;
-    background-size: 28rem, 12rem;
-    background-position: right -5rem bottom 0px, left -2rem bottom;
-    padding-bottom: 16rem;
+    background-position: right -12rem bottom 0px, left -2rem bottom;
+    background-size: 24rem, 12rem;
+    padding-bottom: 5rem;
     align-items: center;
     transition-duration: 1500ms;
 
@@ -352,26 +352,30 @@ body>* {
         padding-bottom: 16rem;
     }
 
-    @media screen and (max-width:400px) and (orientation:portrait) {
+    @media screen and (max-width:700px) and (orientation:portrait) {
         background-size: 28rem, 12rem;
         background-position: right -8rem bottom 0px, left -2rem bottom;
         padding-bottom: 16rem;
     }
 
-   /* @media screen and (orientation:landscape) {
+    /* background-position: right -18rem bottom 0px, left -2rem bottom;
+        background-size: 36rem, 12rem;
+        padding-bottom: 5rem; */
+
+    /* @media screen and (orientation:landscape) {
         background-position: right -20rem bottom 0px, left -2rem bottom;
         background-size: 36rem, 12rem;
         padding-bottom: 5rem;
     }*/
 
     @media screen and (min-width:700px) {
-        background-position: right -18rem bottom 0px, left -2rem bottom;
-        background-size: 36rem, 12rem;
+        background-position: right -12rem bottom 0px, left -2rem bottom;
+        background-size: 28rem, 12rem;
         padding-bottom: 5rem;
     }
 
 
-   @media screen and (min-width:750px) and (orientation:landscape) {
+    @media screen and (min-width:750px) and (orientation:landscape) {
         background-position: right -18rem bottom 0px, left -2rem bottom;
         background-size: 36rem, 12rem;
         padding-bottom: 5rem;
