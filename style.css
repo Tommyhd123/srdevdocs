@@ -359,16 +359,16 @@ body>* {
         padding-bottom: 16rem;
     }
 
-    @media screen and (orientation:portrait) {
+    @media screen and (max-width:620px) {
         background-size: 24rem, 12rem;
-        background-position: right -6rem bottom 0px, left -2rem bottom;
-        padding-bottom: 14rem;
+        background-position: right -8rem bottom 0px, left -2rem bottom;
+        padding-bottom: 8rem;
     }
 
-    @media screen and (max-width:650px) {
+    @media screen and (min-width:700px) {
         background-size: 24rem, 12rem;
         background-position: right -6rem bottom 0px, left -2rem bottom;
-        padding-bottom: 14rem;
+        padding-bottom: 5rem;
     }
 
     @media screen and (min-width:800px)  {
