@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sportradar Console</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- <header>
+    <div class="nav">
+        <img src="Images/Sportradar_White.svg" class="logo">
+
+        <div class="nav-links">
+            <div class="nav-text-links">
+                <a href="#">Documentation</a>
+                <a href="#">Accounts</a>
+                <a href="#">Products</a>
+            </div>
+            <a href="" class="my-account-icon"><img
+                    src="Images/User Account Default Profile Illustration Icon Nav Bar.svg"></a>
+        </div>
+    </div>
+</header> -->
+
+<body>
+
+    <div class="nav">
+        <img src="Images/Sportradar_White.svg" class="logo">
+        <div class="links">
+            <div class="nav-links">
+                <a class="text-link" href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
+                <a class="text-link" href="https://console.sportradar.com/signup">Sign Up</a>
+                <a class="text-link" href="https://console.sportradar.com">Log In</a>
+                <a class="my-account-icon" href=""><img
+                        src="Images/User Account Default Profile Illustration Icon Nav Bar.svg"></a>
+                </a>
+            </div>
+            <img onclick=showSidebar() src="https://files.readme.io/ef0021a-menu_hamburger_three_lines.svg"
+                class="open-menu">
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <img onclick=hideSidebar() src="https://files.readme.io/c86267b-close_delete_x_exit_collapse.svg"
+            class="close-menu">
+        <a class="link" href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
+        <a class="link" href="https://console.sportradar.com/signup">Sign Up</a>
+        <a class="link" href="https://console.sportradar.com">Log In</a>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+            sidebar.style.right = '0px'
+
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+    </script>
+    <div class="console-body">
+
+        <!-- Left Sidebar -->
+        <div class="left-column">
+            <div class="account-info">
+                <div class="account-name">
+                    <div class="h3">Snapchat</div>
+                    <img class="button-icon" src="/Images/arrow_drop_down.svg"></img>
+                    <!-- <button class="button-small-text-only B3">Edit</button> -->
+                </div>
+                <div class="p4">ID:90ujgruidde84i</div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <div class="L1">Applications</div>
+                    <img src="/Images/add plus cross.svg" class="icon-small-bkgd" caption="New Application">
+                    </link>
+                </div>
+                <a href="console-app.html" class="sidebar-row selected">
+                    <div class="left-item">
+                        <img src="/Images/Folder, Document, File application.svg" class="icon-small"
+                            caption="New Application"></link>
+                        <div class="app-link p1">Production</div>
+                    </div>
+                    <div class="app-product-amount p1">3</div>
+                </a>
+                <a class="sidebar-row">
+                    <div class="left-item">
+                        <img src="/Images/Folder, Document, File application.svg" class="icon-small"
+                            caption="New Application"></link>
+                        <div class="app-link p1">Development</div>
+                    </div>
+                    <div class="app-product-amount p1">1</div>
+                </a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <div class="L1">Settings</div>
+                    <!--<img src="/Images/add plus cross.svg" class="icon-small-bkgd" caption="New Application">-->
+                </div>
+                <a href="users.html" class="sidebar-row">
+                    <div class="left-item">
+                        <img src="/Images/User Person.svg" class="icon-small" caption="New Application">
+                        <div class="app-link p1">Users</div>
+                    </div>
+                    <div class="app-product-amount p1">3</div>
+                </a>
+            </div>
+            </a>
+        </div>
+
+        <!-- Center Column / Application view -->
+        <div class="center-column">
+            <div class="row L3">Application</div>
+            <div class="app-title-row">
+                <div class="app-title-left">
+                    <div class="h2">Production</div>
+                    <button class="button-small-text-only B3">Edit</button>
+                </div>
+                <div class="api-key-app-view">
+                    <div class="label-id-group">
+                        <div class="api-key B1">API KEY</div>
+                        <div class="api-key-number m4">555wv4...us3b3s</div>
+                    </div>
+                    <div class="button-group">
+                        <button class="button-small-text-only B3">Copy</button>
+                        <button onclick=showDetails() class="button-small-text-only B3">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legacy Key Details Pop Up Modal -->
+            <div class="details">
+                <div class="details-header">
+                    <div class="details-top-row">
+                        <div class="L4">Snapchat</div>
+                        <img onclick=hideDetails() src="Images/MUI/close delete x exit collapse navy.svg"
+                            class="icon-small">
+                    </div>
+                    <div class="h3">Production</div>
+                </div>
+
+                <div class="master-api-key-group">
+                    <div class="master-api-key">
+                        <div class="details-top-row">
+                            <div class="m2">Master API Key</div>
+                            <div class="button-group"><button class="icon-button">
+                                    <img class="icon-small B3" src="/Images/MUI/duplicate copy multiple link blue.svg"
+                                        alt="Copy"></button>
+                            </div>
+                        </div>
+                        <div class="m4">555wv4yfekifvrzv00q8y5h5d9ubt9hy7ius3b3s</div>
+
+                    </div>
+                    <div class="p4 light">Master key will work for every product that exist inside of the application.</div>
+                </div>
+                <div class="older-keys">
+                    <div class="p3">Older Keys (3)</div>
+                    <div class="p4">These are rotated keys or keys from the old system. All keys are <b>ACTIVE</b>
+                        unless
+                        they are deleted from this list. </div>
+                </div>
+                <div class="legacy-key-admin-only">
+                    <img class="button-icon" src="/Images/MUI/add plus cross link blue.svg">
+                    <div class="p3">Legacy Key (Admin Only)</div>
+                </div>
+
+                <table>
+                    <tr>
+                        <th class="column-1 L5">Name</th>
+                        <th class="column-2 L5">API Key</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="column-1 m2">Rotated</td>
+                        <td class="column-100 m4">6k8xq3y...skq1jdc</td>
+                        <td class="column-logo">
+                            <div class="tr-button-group">
+                                <button class="icon-button">
+                                    <img class="icon-small B3" src="/Images/MUI/duplicate copy multiple link blue.svg"
+                                        alt="Copy"></button>
+                                <button class="icon-button">
+                                    <img class="icon-small B3"
+                                        src="/Images/MUI/delete remove trash garbage recycle error red.svg"
+                                        alt="Delete"></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="column-1 m2">NBA v2</td>
+                        <td class="column-100 m4">08xbhxy...y2itof</td>
+                        <td class="column-logo">
+                            <div class="tr-button-group">
+                                <button class="icon-button">
+                                    <img class="icon-small B3" src="/Images/MUI/duplicate copy multiple link blue.svg"
+                                        alt="Copy"></button>
+                                <button class="icon-button">
+                                    <img class="icon-small B3"
+                                        src="/Images/MUI/delete remove trash garbage recycle error red.svg"
+                                        alt="Delete"></button>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="column-1 m2">MLB v4</td>
+                        <td class="column-2 m4">6l7k2wd...5hb2a3f</td>
+                        <td class="column-logo">
+                            <div class="tr-button-group">
+                                <button class="icon-button">
+                                    <img class="icon-small B3" src="/Images/MUI/duplicate copy multiple link blue.svg"
+                                        alt="Copy"></button>
+                                <button class="icon-button">
+                                    <img class="icon-small B3"
+                                        src="/Images/MUI/delete remove trash garbage recycle error red.svg"
+                                        alt="Delete"></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <script>
+                function showDetails() {
+                    const details = document.querySelector('.details')
+                    details.style.display = 'flex'
+                    details.style.right = '0px'
+
+                }
+
+                function hideDetails() {
+                    const details = document.querySelector('.details')
+                    details.style.display = 'none'
+                }
+
+            </script>
+
+            <div class="button-row">
+                <div class="left-item">
+                    <button class="button-medium-outline blue">
+                        <img class="button-icon" src="/Images/MUI/add plus cross link blue.svg">
+                        <div class="B2">Add Trial</div>
+                    </button>
+                    <button class="button-medium-outline blue">
+                        <img class="button-icon" src="/Images/MUI/add plus cross link blue.svg">
+                        <div class="B2">Add Product</div>
+                    </button>
+                </div>
+                <button class="button-medium-outline grey">
+                    <div class="B2">Sort: Last Modified</div>
+                    <img class="button-icon" src="/Images/arrow_drop_down.svg"></img>
+                </button>
+            </div>
+
+
+            <!-- App's Product List Starts Here -->
+            <div class="app-product-list">
+                <a href="product-usage.html" class="app-product">
+                    <div class="product-header-row">
+                        <div class="left-item">
+                            <img src="Images/MLB Major League Baseball.svg" class="logo-24px">
+                            <div class="product-name h6">MLB Sports API</div>
+                        </div>
+                        <div class="button-group">
+                            <button class="button-small-text-only B3">Docs</button>
+                            <button class="button-small-text-only B3">Edit</button>
+                        </div>
+                    </div>
+                    <div class="product-usage-row">
+                        <div class="left-item">
+                            <div class="product-usage">
+                                <div class="p3">Usage</div>
+                                <div class="usage-amount p3">90%</div>
+                            </div>
+                            <div class="product-usage">
+                                <div class="p3">Daily Avg</div>
+                                <div class="usage-amount p3">903.3</div>
+                            </div>
+                        </div>
+                        <img class="graph-small" src="Images/application/spark graph bar variants.svg">
+                    </div>
+                    <div class="product-contract">
+                        <!-- <div class="p4">Type:Trial / Quota: 100,000 / Start: 11/11/2023 / End: 11/11/2024</div> -->
+                        <div class="p4">Type: Trial</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">Quota: 100,000</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">Start: 11/11/2023</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">End: 11/11/2024</div>
+                    </div>
+                    <div class="product-packages">
+                        <div class="p4">Packages (3): MLB Base, MLB Push, MLB Statcast</div>
+                    </div>
+                </a>
+                
+                <div class="app-product">
+                    <div class="product-header-row">
+                        <div class="left-item">
+                            <img src="Images/NBA National_Basketball_Association.svg" class="logo-24px">
+                            <div class="product-name h6">NBA Sports API</div>
+                        </div>
+                        <div class="button-group">
+                            <button class="button-small-text-only B3">Docs</button>
+                            <button class="button-small-text-only B3">Edit</button>
+                        </div>
+                    </div>
+                    <div class="product-usage-row">
+                        <div class="left-item">
+                            <div class="product-usage">
+                                <div class="p3">Usage</div>
+                                <div class="usage-amount p3">89%</div>
+                            </div>
+                            <div class="product-usage">
+                                <div class="p3">Daily Avg</div>
+                                <div class="usage-amount p3">701.5</div>
+                            </div>
+                        </div>
+                        <img class="graph-small" src="Images/application/spark graph bar variants 1.svg">
+                    </div>
+                    <div class="product-contract">
+                        <!-- <div class="p4">Type:Trial / Quota: 100,000 / Start: 11/11/2023 / End: 11/11/2024</div> -->
+                        <div class="p4">Type: Trial</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">Quota: 100,000</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">Start: 11/11/2023</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">End: 11/11/2024</div>
+                    </div>
+                    <div class="product-packages">
+                        <div class="p4">Packages (3): NBA Base, NBA Push, NBA Statcast</div>
+                    </div>
+                </div>
+                <div class="app-product">
+                    <div class="product-header-row">
+                        <div class="left-item">
+                            <img src="Images/Odds Comparison product.svg" class="logo-24px">
+                            <div class="product-name h6">Odds Comparison API</div>
+                        </div>
+                        <div class="button-group">
+                            <button class="button-small-text-only B3">Docs</button>
+                            <button class="button-small-text-only B3">Edit</button>
+                        </div>
+                    </div>
+                    <div class="product-usage-row">
+                        <div class="left-item">
+                            <div class="product-usage">
+                                <div class="p3">Usage</div>
+                                <div class="usage-amount p3">81%</div>
+                            </div>
+                            <div class="product-usage">
+                                <div class="p3">Daily Avg</div>
+                                <div class="usage-amount p3">585.0</div>
+                            </div>
+                        </div>
+                        <img class="graph-small" src="Images/application/spark graph bar variants 1.svg">
+                    </div>
+                    <div class="product-contract">
+                        <!-- <div class="p4">Type:Trial / Quota: 100,000 / Start: 11/11/2023 / End: 11/11/2024</div> -->
+                        <div class="p4">Type: Trial</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">Quota: 100,000</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">Start: 11/11/2023</div>
+                        <div class="p4 text-divider">/</div>
+                        <div class="p4">End: 11/11/2024</div>
+                    </div>
+                    <div class="product-packages">
+                        <div class="p4">Packages (1): Odds Comparison Futures v2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar / Helpful Links -->
+        <div class="right-column">
+            <div class="helpful-links-header">
+                <img src="/Images/MUI/Bolt Helpful Links Lightning.svg" class="icon-small" caption="">
+                <div class="L1">Helpful Links</div>
+            </div>
+            <div class="helpful-links-body">
+                <div class="p4">Whether you're just getting started or troubleshooting an issue, take a look
+                    at
+                    our help
+                    documentation.</div>
+            </div>
+            <a class="helpful-link p4" href="https://learning.postman.com/docs/getting-started/overview/">
+                • Postman: Quick Start</a>
+            <!--<a class="sidebar-row">
+                        <div class="sidebar-left-item">
+                            <div class="app-link p1">Postman: Quick Start</div>
+                        </div>
+                        <div class="app-product-amount p4">3</div>-->
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
