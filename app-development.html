@@ -98,21 +98,21 @@
                             src="/Images/add plus cross.svg" class="icon-small-bkgd"></button>
 
                 </div>
-                <a href="console-app.html" class="sidebar-row selected">
+                <a href="console-app.html" class="sidebar-row">
                     <div class="left-item">
                         <img src="/Images/Folder, Document, File application.svg" class="icon-small"
                             caption="New Application">
-                        <div class="app-link h6">Production</div>
+                        <div class="app-link p1">Production</div>
                     </div>
-                    <div class="app-product-amount h6">3</div>
+                    <div class="app-product-amount p1">3</div>
                 </a>
-                <a href="app-development.html" class="sidebar-row">
+                <a href="app-development.html" class="sidebar-row selected">
                     <div class="left-item">
                         <img src="/Images/Folder, Document, File application.svg" class="icon-small"
                             caption="New Application">
-                        <div class="app-link p1">Development</div>
+                        <div class="app-link h6">Development</div>
                     </div>
-                    <div class="app-product-amount p1">0</div>
+                    <div class="app-product-amount h6">0</div>
                 </a>
             </div>
             <div class="sidebar-section">
@@ -189,13 +189,13 @@
             <div class="row L3">Application</div>
             <div class="app-title-row">
                 <div class="app-title-left">
-                    <div class="h2">Production</div>
+                    <div class="h2">Development</div>
                     <button onclick=showModalEditApp() class="button-small-text-only B3">Edit</button>
                 </div>
                 <div class="api-key-app-view">
                     <div class="label-id-group">
                         <div class="api-key B1">API KEY</div>
-                        <div class="api-key-number m4">555wv4...us3b3s</div>
+                        <div class="api-key-number m4">362691...mski23</div>
                     </div>
                     <div class="button-group">
                         <button class="button-small-text-only B3">Copy</button>
@@ -223,7 +223,7 @@
                     <div class="modal-body">
                         <div class="left-item-vert modal-element">
                             <label for="edit-app" class="L5">Application Name *</label>
-                            <input type="text" id="edit-app" name="app-name" class="form-styling" value="Production"
+                            <input type="text" id="edit-app" name="app-name" class="form-styling" value="Development"
                                 required/>
                         </div>
 
@@ -278,7 +278,7 @@
                         <div class="master-api-key">
                             <div class="details-top-row">
                                 <div class="m2">Master API Key</div>
-                                <div class="m4">555wv4...us3b3s</div>
+                                <div class="m4">362691...mski23</div>
                             </div>
                             <a href="" class="tooltip p3" data-tooltip="Copy Key">
                                 <button class="icon-button">
@@ -524,238 +524,10 @@
             <!-- App's Product List Starts Here -->
             <div class="app-product-list">
 
-                <!-- MLB Sports API Product -->
-                <div class="app-product">
-                    <div class="product-header-row">
-                        <div class="left-item">
-                            <img src="Images/MLB Major League Baseball.svg" class="logo-24px">
-                            <a href="product-usage.html">
-                                <div class="product-name h6 blue-link">MLB Sports API</div>
-                            </a>
-                        </div>
-                        <div class="button-group">
-                            <a href="https://docs.sportradar.com/baseball/reference/mlb-overview"
-                                class="button-small-text-only B3">Docs</a>
-                            <a onclick=showModalEditProduct() class="button-small-text-only B3">Edit</a>
-                        </div>
-                    </div>
-                    <div class="product-usage-row">
-                        <div class="left-item">
-                            <div class="product-usage">
-                                <div class="p3">Usage</div>
-                                <div class="usage-amount p3">89%</div>
-                            </div>
-                            <div class="product-usage">
-                                <div class="p3">Daily Avg</div>
-                                <div class="usage-amount p3">701.5</div>
-                            </div>
-                        </div>
-                        <img class="graph-small" src="Images/application/spark graph bar variants 1.svg">
-                    </div>
-                    <div class="product-contract">
-                        <!-- <div class="p4">Type:Trial / Quota: 100,000 / Start: 11/11/2023 / End: 11/11/2024</div> -->
-                        <div class="p4">Type: Trial</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">Quota: 100,000</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">Start: 11/11/2023</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">End: 11/11/2024</div>
-                    </div>
-                    <div class="product-packages">
-                        <div class="p4">Packages (3): NBA Base, NBA Push, NBA Statcast</div>
-                    </div>
-                </div>
-
-
-                <!-- NBA Sports API Product -->
-                <div class="app-product">
-                    <div class="product-header-row">
-                        <div class="left-item">
-                            <img src="Images/NBA National_Basketball_Association.svg" class="logo-24px">
-                            <a href="product-usage.html">
-                                <div class="product-name h6 blue-link">NBA Sports API</div>
-                            </a>
-                        </div>
-                        <div class="button-group">
-                            <a href="https://docs.sportradar.com/basketball/reference/nba-overview"
-                                class="button-small-text-only B3">Docs</a>
-                            <a onclick=showModalEditProduct() class="button-small-text-only B3">Edit</a>
-                        </div>
-                    </div>
-                    <div class="product-usage-row">
-                        <div class="left-item">
-                            <div class="product-usage">
-                                <div class="p3">Usage</div>
-                                <div class="usage-amount p3">89%</div>
-                            </div>
-                            <div class="product-usage">
-                                <div class="p3">Daily Avg</div>
-                                <div class="usage-amount p3">701.5</div>
-                            </div>
-                        </div>
-                        <img class="graph-small" src="Images/application/spark graph bar variants 1.svg">
-                    </div>
-                    <div class="product-contract">
-                        <!-- <div class="p4">Type:Trial / Quota: 100,000 / Start: 11/11/2023 / End: 11/11/2024</div> -->
-                        <div class="p4">Type: Trial</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">Quota: 100,000</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">Start: 11/11/2023</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">End: 11/11/2024</div>
-                    </div>
-                    <div class="product-packages">
-                        <div class="p4">Packages (3): NBA Base, NBA Push, NBA Statcast</div>
-                    </div>
-                </div>
-
-                <!-- Images API Product -->
-                <div class="app-product">
-                    <div class="product-header-row">
-                        <div class="left-item">
-                            <img src="Images/Images.svg" class="logo-24px">
-                            <a href="product-usage.html">
-                                <div class="product-name h6 blue-link">Images</div>
-                            </a>
-                        </div>
-                        <div class="button-group">
-                            <a href="https://docs.sportradar.com/images-and-editorials/reference/images-overview"
-                                class="button-small-text-only B3">Docs</a>
-                            <a onclick=showModalEditProduct() class="button-small-text-only B3">Edit</a>
-                        </div>
-                    </div>
-                    <div class="product-usage-row">
-                        <div class="left-item">
-                            <div class="product-usage">
-                                <div class="p3">Usage</div>
-                                <div class="usage-amount p3">40%</div>
-                            </div>
-                            <div class="product-usage">
-                                <div class="p3">Daily Avg</div>
-                                <div class="usage-amount p3">585.0</div>
-                            </div>
-                        </div>
-                        <img class="graph-small" src="Images/application/spark graph bar variants 1.svg">
-                    </div>
-                    <div class="product-contract">
-                        <!-- <div class="p4">Type:Trial / Quota: 100,000 / Start: 11/11/2023 / End: 11/11/2024</div> -->
-                        <div class="p4">Type: Paid</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">Quota: 100,000</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">Start: 11/11/2023</div>
-                        <div class="p4 text-divider">/</div>
-                        <div class="p4">End: 11/11/2024</div>
-                    </div>
-                    <div class="product-packages">
-                        <div class="p4">Packages (3): NBA Base, NBA Push, NBA Statcast</div>
-                    </div>
-                </div>
-
-                <!-- Edit Product Modal -->
-                <div class="ModalEditProduct">
-                    <div class="editproduct">
-                        <div class="details-header">
-                            <div class="modal-title-row"> <!-- class="product-header-row" -->
-                                <div class="left-item">
-                                    <img src="Images/MLB Major League Baseball.svg" class="logo-24px">
-                                    <div class="product-name h3">MLB Sports API</div>
-                                </div>
-                                <div class="p2 light">Last Modified: 1/12/24</div>
-                            </div>
-                        </div>
-                        <div class="divider-bottom"></div>
-                        <div class="modal-body">
-                            <div class="modal-element form-field">
-                                <div class="L5">Packages</div>
-                                <div class="form-list">
-                                    <label class="p5 checkbox-label-group" for="package-select"><input class="checkbox"
-                                            type="checkbox" id="package-select" name="package-select"
-                                            value="MLB-Push" />
-                                        MLB Base</label>
-                                    <label class="p5 checkbox-label-group" for="package-select"><input class="checkbox"
-                                            type="checkbox" id="package-select" name="package-select"
-                                            value="MLB-Push" />
-                                        MLB Push</label>
-                                    <label class="p5 checkbox-label-group" for="package-select"><input class="checkbox"
-                                            type="checkbox" id="package-select" name="package-select"
-                                            value="MLB-Statcast" /> MLB Statcast</label>
-                                </div>
-                            </div>
-
-                            <div class="divider-bottom"></div>
-
-                            <div class="modal-element form-field">
-                                <div class="L5">Parameters</div>
-                                <div class="left-item-vert">
-                                    <label for="package-app" class="L5">Application</label>
-                                    <select class="form-styling" id="package-app" name="package-app">
-                                        <option value="Production">Production</option>
-                                        <option value="Development">Development</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="left-item-vert">
-                                        <label for="package-type" class="L5">Type</label>
-                                        <select class="form-styling" id="package-type" name="package-type">
-                                            <option value="Paid">Paid</option>
-                                            <option value="Trial">Trial</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="left-item-vert">
-                                        <label for="package-usage-plan" class="L5">Usage Plan</label>
-                                        <select class="form-styling" id="package-usage-plan" name="package-usage-plan">
-                                            <option value="Usage Plan 1">U. Plan 1</option>
-                                            <option value="Usage Plan 2">U. Plan 2</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="left-item-vert">
-                                    <label for="package-quota" class="L5">30-Day Quota</label>
-                                    <input list="package-quota-amount" id="package-quota" name="package-quota"
-                                        class="form-styling" value="100000" />
-                                    <datalist id="package-quota-amount">
-                                        <option value="100000"></option>
-                                        <option value="200000"></option>
-                                        <option value="300000"></option>
-                                        <option value="400000"></option>
-                                        <option value="500000"></option>
-                                        <option value="600000"></option>
-                                    </datalist>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="left-item-vert">
-                                        <label for="start" class="L5">Start</label>
-                                        <input class="form-styling" type="date" id="start" name="trip-start"
-                                            value="2023-08-27" min="2023-01-01" max="2028-12-31">
-                                    </div>
-                                    <div class="left-item-vert">
-                                        <label for="start" class="L5">End</label>
-                                        <input class="form-styling" type="date" id="start" name="trip-start"
-                                            value="2024-08-27" min="2023-01-01" max="2028-12-31">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="divider-bottom"></div>
-                        <div class="modal-footer">
-                            <div class="p4">Packages selected: 1</div>
-
-                            <div class="left-item">
-                                <button onclick=hideEditProduct() class="button-medium-text-only">Cancel</button>
-                                <button class="button-medium-fill">Update</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="empty-table">
+                   
+                <img class="graphic-medium" src="Images/Illustrations Sports.svg"><div class="p2">There are no packages in this application.</div></div>
+                
             </div>
 
             <!-- Show/Hide Modal with this interaction -->

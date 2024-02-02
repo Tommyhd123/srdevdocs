@@ -32,14 +32,13 @@
 </header> -->
 
 <body>
-
+    <!-- Navigation Bar -->
     <div class="nav">
         <img src="Images/Sportradar_White.svg" class="logo">
         <div class="links">
             <div class="nav-links">
                 <a class="text-link" href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
-                <a class="text-link" href="https://console.sportradar.com/signup">Sign Up</a>
-                <a class="text-link" href="https://console.sportradar.com">Log In</a>
+                <a class="text-link" href="accounts.html">Accounts</a>
                 <a class="my-account-icon" href=""><img
                         src="Images/User Account Default Profile Illustration Icon Nav Bar.svg"></a>
                 </a>
@@ -50,13 +49,19 @@
     </div>
 
     <div class="sidebar">
+        <div class="sidebar-content">
+
         <img onclick=hideSidebar() src="https://files.readme.io/c86267b-close_delete_x_exit_collapse.svg"
             class="close-menu">
-        <a class="link" href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
-        <a class="link" href="https://console.sportradar.com/signup">Sign Up</a>
-        <a class="link" href="https://console.sportradar.com">Log In</a>
+        <a class="text-link-sidebar" href="https://docs.sportradar.com/getting-started/docs">Documentation</a>
+        <a class="text-link-sidebar" href="accounts.html">Accounts</a>
+        <a class="my-account-icon-expanded" href=""><img
+                src="Images/User Account Default Profile Illustration Icon Nav Bar.svg">Steven McKing</a>
+        </a>
+        </div>
     </div>
 
+    <!-- Navigation Menu Sidebar when under 908px-->
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
@@ -69,8 +74,8 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
-
     </script>
+
     <div class="console-body">
 
         <!-- Left Sidebar -->
@@ -78,24 +83,24 @@
             <div class="account-info">
                 <div class="account-name">
                     <div class="h3">Snapchat</div>
-                    <img class="button-icon" src="/Images/arrow_drop_down.svg"></img>
-                    <!-- <button class="button-small-text-only B3">Edit</button> -->
+                    <!-- <img class="button-icon" src="/Images/arrow_drop_down.svg"></img>
+                    <button class="button-small-text-only B3">Edit</button> -->
                 </div>
-                <div class="p4">ID:90ujgruidde84i</div>
+                <div class="p4 account-id">ID:90ujgruidde84i</div>
             </div>
             <div class="sidebar-section">
                 <div class="sidebar-header">
                     <div class="L1">Applications</div>
-                    <img src="/Images/add plus cross.svg" class="icon-small-bkgd" caption="New Application">
-                    </link>
+                    <button href="" class="tooltip p3" data-tooltip="Create New Application"><img
+                            src="/Images/add plus cross.svg" class="icon-small-bkgd"></button>
                 </div>
                 <a href="console-app.html" class="sidebar-row selected">
                     <div class="left-item">
                         <img src="/Images/Folder, Document, File application.svg" class="icon-small"
                             caption="New Application"></link>
-                        <div class="app-link p1">Production</div>
+                        <div class="app-link h6">Production</div>
                     </div>
-                    <div class="app-product-amount p1">3</div>
+                    <div class="app-product-amount h6">3</div>
                 </a>
                 <a class="sidebar-row">
                     <div class="left-item">
@@ -123,262 +128,298 @@
         </div>
 
         <!-- Main Column / Application view -->
-        <div class="center-column">
-            <div class="row">
-                <div class="breadcrumbs p3">
-                    <a class="breadcrumbs" href="console-app.html">Production</a>
-                    <div>/</div> <a class="breadcrumbs" href="product-usage.html">MLB Sports API</a>
-                </div>
-                <div class="api-key-app-view-secondary">
-                    <div class="label-id-group">
-                        <div class="api-key B1">API KEY</div>
-                        <div class="api-key-number m4">555wv4...us3b3s</div>
+            <div class="center-column">
+                <div class="row">
+                    <div class="breadcrumbs p3">
+                        <a class="breadcrumbs" href="console-app.html">Production</a>
+                        <div>/</div> <a class="breadcrumbs" href="product-usage.html">MLB Sports API</a>
                     </div>
-                    <div class="button-group">
-                        <button class="button-small-text-only B3">Copy</button>
-                        <button onclick=showDetails() class="button-small-text-only B3">Details</button>
+                    <div class="api-key-app-view-secondary">
+                        <div class="label-id-group">
+                            <div class="api-key B1">API KEY</div>
+                            <div class="api-key-number m4">555wv4...us3b3s</div>
+                        </div>
+                        <div class="button-group">
+                            <button class="button-small-text-only B3">Copy</button>
+                            <button onclick=showModalKeyDetails() class="button-small-text-only B3">Details</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="app-title-row">
-                <div class="app-title-left">
-                    <div class="h2">MLB Sports API</div>
-                </div>
-                <div class="title-row-button-group">
-                    <button class="button-small-text-only B3">Docs</button>
-                    <button class="icon-button">
-                        <img class="icon-small B3"
-                            src="Images/MUI/more_vert options menu edit 3 three dots indigo300.svg" alt="Edit"></button>
-                </div>
-
-
-            </div>
-
-            <!-- Legacy Key Details Pop Up Modal -->
-            <div class="details">
-                <div class="details-header">
-                    <div class="details-top-row">
-                        <div class="L4">Snapchat</div>
-                        <img onclick=hideDetails() src="Images/MUI/close delete x exit collapse navy.svg"
-                            class="icon-small">
+                <div class="app-title-row">
+                    <div class="app-title-left">
+                        <div class="h2">MLB Sports API</div>
                     </div>
-                    <div class="h3">Production</div>
+                    <div class="title-row-button-group">
+                        <a href="https://docs.sportradar.com/baseball/reference/mlb-overview"
+                            class="button-small-text-only B3">Docs</a>
+                        <a href="" class="tooltip p3" data-tooltip="Edit">
+                            <button class="icon-button">
+                                <img class="icon-small B3"
+                                    src="Images/MUI/more_vert options menu edit 3 three dots indigo300.svg"></button></a>
+                    </div>
                 </div>
 
-                <div class="master-api-key-group">
-                    <div class="master-api-key">
-                        <div class="details-top-row">
-                            <div class="m2">Master API Key</div>
-                            <div class="button-group"><button class="icon-button">
-                                    <img class="icon-small B3" src="/Images/MUI/duplicate copy multiple link blue.svg"
-                                        alt="Copy"></button>
+                <!-- Legacy Key Details Pop Up Modal -->
+                <div class="ModalKeyDetails">
+                    <div class="details">
+                        <div class="details-header">
+                            <div class="details-top-row">
+                                <div class="L4">Snapchat</div>
+                                <a href="" class="tooltip p3" data-tooltip="Close">
+                                    <button class="icon-button">
+                                        <img class="icon-small B3"
+                                            src="Images/MUI/close delete x exit collapse navy.svg"
+                                            alt="Copy"></button></a>
+                                <!-- <img onclick=hideDetails() src="Images/MUI/close delete x exit collapse navy.svg"
+                            class="icon-small"> -->
+                            </div>
+                            <div class="h3">Production</div>
+                        </div>
+
+                        <div class="master-api-key-group">
+                            <div class="master-api-key">
+                                <div class="details-top-row">
+                                    <div class="m2">Master API Key</div>
+                                    <div class="m4">555wv4...us3b3s</div>
+                                </div>
+                                <a href="" class="tooltip p3" data-tooltip="Copy Key">
+                                    <button class="icon-button">
+                                        <img class="icon-small B3"
+                                            src="/Images/MUI/duplicate copy multiple link blue.svg"
+                                            alt="Copy"></button></a>
+
+
+
+                            </div>
+                            <div class="p4 light">Master key will work for every product that exist inside of the
+                                application.
                             </div>
                         </div>
-                        <div class="m4">555wv4yfekifvrzv00q8y5h5d9ubt9hy7ius3b3s</div>
+                        <div class="older-keys">
+                            <div class="p3">Older Keys (3)</div>
+                            <div class="p4">These are rotated keys or keys from the old system. All keys are
+                                <b>ACTIVE</b>
+                                unless
+                                they are deleted from this list. </div>
+                        </div>
+                        <div class="legacy-key-admin-only">
+                            <img class="button-icon" src="/Images/MUI/add plus cross link blue.svg">
+                            <div class="p3">Legacy Key (Admin Only)</div>
+                        </div>
 
+                        <table>
+                            <tr>
+                                <th class="column-1 L5">Name</th>
+                                <th class="column-1 L5">API Key</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td class="column-1 m2">Rotated</td>
+                                <td class="column-1 m4">6k8xq3y...skq1jdc</td>
+                                <td class="column-logo">
+                                    <div class="tr-button-group">
+                                        <a href="" class="tooltip p3" data-tooltip="Copy Key">
+                                            <button class="icon-button">
+                                                <img class="icon-small B3"
+                                                    src="/Images/MUI/duplicate copy multiple link blue.svg"
+                                                    alt="Copy"></button></a>
+                                        <a href="" class="tooltip p3" data-tooltip="Delete">
+                                            <button class="icon-button">
+                                                <img class="icon-small B3"
+                                                    src="/Images/MUI/delete remove trash garbage recycle error red.svg"
+                                                    alt="Delete"></button></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column-1 m2">NBA v2</td>
+                                <td class="column-100 m4">08xbhxy...y2itof</td>
+                                <td class="column-logo">
+                                    <div class="tr-button-group">
+                                        <a href="" class="tooltip p3" data-tooltip="Copy Key">
+                                            <button class="icon-button">
+                                                <img class="icon-small B3"
+                                                    src="/Images/MUI/duplicate copy multiple link blue.svg"
+                                                    alt="Copy"></button></a>
+                                        <a href="" class="tooltip p3" data-tooltip="Delete">
+                                            <button class="icon-button">
+                                                <img class="icon-small B3"
+                                                    src="/Images/MUI/delete remove trash garbage recycle error red.svg"
+                                                    alt="Delete"></button></a>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="column-1 m2">MLB v4</td>
+                                <td class="column-2 m4">6l7k2wd...5hb2a3f</td>
+                                <td class="column-logo">
+                                    <div class="tr-button-group">
+                                        <a href="" class="tooltip p3" data-tooltip="Copy Key">
+                                            <button class="icon-button">
+                                                <img class="icon-small B3"
+                                                    src="/Images/MUI/duplicate copy multiple link blue.svg"
+                                                    alt="Copy"></button></a>
+                                        <a href="" class="tooltip p3" data-tooltip="Delete">
+                                            <button class="icon-button">
+                                                <img class="icon-small B3"
+                                                    src="/Images/MUI/delete remove trash garbage recycle error red.svg"
+                                                    alt="Delete"></button></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="p4">Master key will work for every product that exist inside of the application.</div>
-                </div>
-                <div class="older-keys">
-                    <div class="p3">Older Keys (3)</div>
-                    <div class="p4">These are rotated keys or keys from the old system. All keys are <b>ACTIVE</b>
-                        unless
-                        they are deleted from this list. </div>
-                </div>
-                <div class="legacy-key-admin-only">
-                    <img class="button-icon" src="/Images/MUI/add plus cross link blue.svg">
-                    <div class="p3">Legacy Key (Admin Only)</div>
                 </div>
 
-                <table>
-                    <tr>
-                        <th class="column-1 L5">Name</th>
-                        <th class="column-2 L5">API Key</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td class="column-1 m2">Rotated</td>
-                        <td class="column-100 m4">6k8xq3y...skq1jdc</td>
-                        <td class="column-logo">
-                            <div class="tr-button-group">
-                                <button class="icon-button">
-                                    <img class="icon-small B3" src="/Images/MUI/duplicate copy multiple link blue.svg"
-                                        alt="Copy"></button>
-                                <button class="icon-button">
-                                    <img class="icon-small B3"
-                                        src="/Images/MUI/delete remove trash garbage recycle error red.svg"
-                                        alt="Delete"></button>
+                <!-- Show/Hide Key Details Modal with this interaction -->
+                <script>
+                    function showModalKeyDetails() {
+                        const ModalKeyDetails = document.querySelector('.ModalKeyDetails')
+                        ModalKeyDetails.style.display = 'flex'
+                        ModalKeyDetails.style.right = '0px'
+                    }
+
+                    function hideModalKeyDetails() {
+                        const ModalKeyDetails = document.querySelector('.ModalKeyDetails')
+                        ModalKeyDetails.style.display = 'none'
+                    }
+                </script>
+
+
+                <div class="contract-box">
+                    <div class="contract-box-left">
+                        <div class="contract-usage">
+                            <div class="left-item-vert">
+                                <div class="L5">Usage</div>
+                                <div class="B3 light">Last 30 Days</div>
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="column-1 m2">NBA v2</td>
-                        <td class="column-100 m4">08xbhxy...y2itof</td>
-                        <td class="column-logo">
-                            <div class="tr-button-group">
-                                <button class="icon-button">
-                                    <img class="icon-small B3" src="/Images/MUI/duplicate copy multiple link blue.svg"
-                                        alt="Copy"></button>
-                                <button class="icon-button">
-                                    <img class="icon-small B3"
-                                        src="/Images/MUI/delete remove trash garbage recycle error red.svg"
-                                        alt="Delete"></button>
+                            <div class="left-item-vert">
+                                <div class="h2 margin-top-xs">90%</div>
+                                <div class="B3">89,789 Calls</div>
                             </div>
-                        </td>
+                        </div>
 
-                    </tr>
-                    <tr>
-                        <td class="column-1 m2">MLB v4</td>
-                        <td class="column-2 m4">6l7k2wd...5hb2a3f</td>
-                        <td class="column-logo">
-                            <div class="tr-button-group">
-                                <button class="icon-button">
-                                    <img class="icon-small B3" src="/Images/MUI/duplicate copy multiple link blue.svg"
-                                        alt="Copy"></button>
-                                <button class="icon-button">
-                                    <img class="icon-small B3"
-                                        src="/Images/MUI/delete remove trash garbage recycle error red.svg"
-                                        alt="Delete"></button>
+                        <div class="contract-daily-avg">
+                            <div class="left-item-vert">
+                                <div class="L5">Daily Avg</div>
+                                <div class="B3 light">Last 30 Days</div>
                             </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                            <div class="left-item-vert">
+                                <div class="h2 margin-top-xs">2903.3</div>
+                                <div class="B3">Calls</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contract-info">
+                        <div class="contract-detail">
+                            <div class="p3 w56">Type:</div>
+                            <div class="p4">Paid</div>
+                        </div>
+                        <div class="contract-detail">
+                            <div class="p3 w56">Quota:</div>
+                            <div class="p4">100,000 Calls Per Rolling 30-Day Period</div>
+                        </div>
+                        <div class="contract-detail">
+                            <div class="p3 w56">End Date:</div>
+                            <div class="p4">Dec 1, 2024 (305 Days)</div>
+                        </div>
+                    </div>
+                </div>
 
-            <script>
-                function showDetails() {
-                    const details = document.querySelector('.details')
-                    details.style.display = 'flex'
-                    details.style.right = '0px'
-
-                }
-
-                function hideDetails() {
-                    const details = document.querySelector('.details')
-                    details.style.display = 'none'
-                }
-
-            </script>
-
-            <div class="contract-box">
-                <div class="contract-box-left">
-                    <div class="contract-usage">
+                <div class="button-row">
+                    <div class="left-item">
+                        <button class="button-medium-dropdown">
+                            <div class="B2">Timeframe: Last 3 Months</div>
+                            <img class="button-icon" src="/Images/arrow_drop_down.svg"></img>
+                        </button>
+                        <button class="button-medium-dropdown">
+                            <div class="B2">Totals</div>
+                            <img class="button-icon" src="/Images/arrow_drop_down.svg"></img>
+                        </button>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend p4"><img src="Images/application/legend-line-calls.svg">Calls</div>
+                        <div class="legend p4"><img src="Images/application/legend-line-average.svg">Average</div>
+                    </div>
+                </div>
+                <div class="data-viz-group">
+                    <div class="data-viz-y-info">
+                        <div class="L5">4500</div>
+                        <div class="L5">500</div>
+                    </div>
+                    <img class="data-viz" src="Images/application/data viz.svg">
+                </div>
+                <div class="data-viz-x-info">
+                    <div class="L5">11/1</div>
+                    <div class="L5">12/1</div>
+                    <div class="L5">1/1</div>
+                </div>
+                <div class="contract-usage-timeframe">
+                    <div class="contract-usage-row border-right">
                         <div class="left-item-vert">
                             <div class="L5">Usage</div>
-                            <div class="B3 light">Last 30 Days</div>
+                            <div class="B3 light">(Last 3 Months)</div>
                         </div>
                         <div class="left-item-vert">
-                            <div class="h2 margin-top-xs">90%</div>
-                            <div class="B3">89,789 Calls</div>
-                        </div>
-                    </div>
-
-                    <div class="contract-daily-avg">
-                        <div class="left-item-vert">
-                            <div class="L5">Daily Avg</div>
-                            <div class="B3 light">Last 30 Days</div>
-                        </div>
-                        <div class="left-item-vert">
-                            <div class="h2 margin-top-xs">2903.3</div>
+                            <div class="h2">302,903</div>
                             <div class="B3">Calls</div>
                         </div>
                     </div>
+                    <div class="contract-usage-row border-right">
+                        <div class="left-item-vert">
+                            <div class="L5">Daily Avg</div>
+                            <div class="B3 light">(Last 3 Months)</div>
+                        </div>
+                        <div class="left-item-vert">
+                            <div class="h2">1811.7</div>
+                            <div class="B3">Calls</div>
+                        </div>
+                    </div>
+                    <!-- <div class="divider-vert"></div>-->
+                    <div class="contract-usage-row">
+                        <div class="left-item-vert">
+                            <div class="L5">Errors</div>
+                            <div class="B3 light">(Last 3 Months)</div>
+                        </div>
+                        <div class="left-item-vert">
+                            <div class="h2">33</div>
+                            <div class="B3">Errors</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contract-info">
-                    <div class="contract-detail">
-                        <div class="p3 w56">Type:</div>
-                        <div class="p4">Paid</div>
-                    </div>
-                    <div class="contract-detail">
-                        <div class="p3 w56">Quota:</div>
-                        <div class="p4">100,000 Calls Per Rolling 30-Day Period</div>
-                    </div>
-                    <div class="contract-detail">
-                        <div class="p3 w56">End Date:</div>
-                        <div class="p4">Dec 1, 2024 (305 Days)</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="button-row">
-                <div class="left-item">
-                    <button class="button-medium-outline grey">
-                        <div class="B2">Timeframe: Last 3 Months</div>
-                        <img class="button-icon" src="/Images/arrow_drop_down.svg"></img>
-                    </button>
-                    <button class="button-medium-outline grey">
-                        <div class="B2">Totals</div>
-                        <img class="button-icon" src="/Images/arrow_drop_down.svg"></img>
-                    </button>
-                </div>
-                <div class="legend-group">
-                    <div class="legend p4"><img src="Images/application/legend-line-calls.svg">Calls</div>
-                    <div class="legend p4"><img src="Images/application/legend-line-average.svg">Average</div>
-                </div>
-            </div>
-            <div class="data-viz-group">
-                <div class="data-viz-y-info">
-                    <div class="L5">4500</div>
-                    <div class="L5">500</div>
-                </div>
-                <img class="data-viz" src="Images/application/data viz.svg">
-            </div>
-            <div class="data-viz-x-info">
-                <div class="L5">11/1</div>
-                <div class="L5">12/1</div>
-                <div class="L5">1/1</div>
-            </div>
-            <div class="contract-usage-timeframe">
-                <div class="contract-usage-row border-right">
-                    <div class="left-item-vert">
-                        <div class="L5">Usage</div>
-                        <div class="B3 light">(Last 3 Months)</div>
-                    </div>
-                    <div class="left-item-vert">
-                        <div class="h2">302,903</div>
-                        <div class="B3">Calls</div>
-                    </div>
-                </div>
-                <div class="contract-usage-row border-right">
-                    <div class="left-item-vert">
-                        <div class="L5">Daily Avg</div>
-                        <div class="B3 light">(Last 3 Months)</div>
-                    </div>
-                    <div class="left-item-vert">
-                        <div class="h2">1811.7</div>
-                        <div class="B3">Calls</div>
-                    </div>
-                </div>
-                <!--                <div class="divider-vert"></div>-->
-                <div class="contract-usage-row">
-                    <div class="left-item-vert">
-                        <div class="L5">Errors</div>
-                        <div class="B3 light">(Last 3 Months)</div>
-                    </div>
-                    <div class="left-item-vert">
-                        <div class="h2">33</div>
-                        <div class="B3">Errors</div>
-                    </div>
-                </div>
-            </div>
+                <table class="user-list">
+                    <tr>
+                        <th class="column-auto L5">Packages (3)</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="column-auto p5 one-row">MLB Base</td>
+                    </tr>
+                    <tr>
+                        <td class="column-auto p5 one-row">MLB Push</td>
+                    </tr>
+                    <tr>
+                        <td class="column-auto p5 one-row">MLB Statcast</td>
+                    </tr>
 
-            <table class="user-list">
-                <tr>
-                    <th class="column-auto L5">Packages (3)</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td class="column-auto p5">MLB Base</td>
-                </tr>
-                <tr>
-                    <td class="column-auto p5">MLB Push</td>
-                </tr>
-                <tr>
-                    <td class="column-auto p5">MLB Statcast</td>
-                </tr>
+                </table>
 
-            </table>
+            <!-- Show/Hide Modal with this interaction -->
+            <script>
+                function showModalKeyDetails() {
+                    const ModalKeyDetails = document.querySelector('.ModalKeyDetails')
+                    ModalKeyDetails.style.display = 'flex'
+                    ModalKeyDetails.style.right = '0px'
+                }
+
+                function hideModalKeyDetails() {
+                    const ModalKeyDetails = document.querySelector('.ModalKeyDetails')
+                    ModalKeyDetails.style.display = 'none'
+                }
+            </script>
 
             <!-- Right Sidebar / Helpful Links -->
             <div class="right-column">
@@ -402,3 +443,4 @@
 
 
             </div>
+        </div>
