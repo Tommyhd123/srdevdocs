@@ -1,7 +1,7 @@
 <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_25_218)">
 <circle cx="104" cy="104" r="60" fill="url(#paint0_radial_25_218)"/>
-<path d="M171 99L130.86 105.47C112.249 108.469 93.2703 108.389 74.6846 105.232L38 99" stroke="url(#paint1_linear_25_218)" stroke-width="2"/>
+<path d="M171 98L130.86 104.47C112.249 107.469 93.2703 107.389 74.6846 104.232L38 98" stroke="#FFCB46"/>
 </g>
 <defs>
 <radialGradient id="paint0_radial_25_218" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(104 51.6) rotate(90) scale(114.8)">
@@ -10,12 +10,6 @@
 <stop offset="0.8" stop-color="#5446FF"/>
 <stop offset="1" stop-color="#362E92"/>
 </radialGradient>
-<linearGradient id="paint1_linear_25_218" x1="164.5" y1="99" x2="43" y2="99" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFCB46"/>
-<stop offset="0.21" stop-color="#FFCB46" stop-opacity="0"/>
-<stop offset="0.795" stop-color="#FFCB46" stop-opacity="0"/>
-<stop offset="1" stop-color="#FFCB46" stop-opacity="0.930693"/>
-</linearGradient>
 <clipPath id="clip0_25_218">
 <rect width="208" height="208" fill="white"/>
 </clipPath>
